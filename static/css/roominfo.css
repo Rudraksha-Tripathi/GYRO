@@ -1,0 +1,41 @@
+
+
+#uploadinfos{
+    margin: 0px auto;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10%;
+    width: 50%;
+    height: 90%;
+}
+
+table{
+   
+    font-family: cursive;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    background: rgba(0,0,0,.9);
+    
+}
+
+table th,td{
+    color: aliceblue;
+}
+
+input{
+    background-color: transparent;
+}
+
+.imp:after{
+    content: '*';
+    color: red;
+}
+#ubtn{
+    margin-left: 40%;
+}
+
+#desc{
+    width: 80%;
+    height: auto;
+    resize: none;
+}
+

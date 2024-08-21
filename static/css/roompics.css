@@ -1,0 +1,75 @@
+
+#picsdata{
+    height: 200px;
+    margin-top: 10%;
+}
+
+.thumbnail{
+  height: 100px;
+  margin: 10px;
+}
+/*
+#pic_container{
+    display: none;
+    width: 40%;
+    height: 200px;
+    display: table;
+    overflow: auto;
+    position: absolute;
+  
+}
+*/
+.recs{
+	position: relative;
+	height: 80%;
+	width: 200px;
+}
+.imgrecs{
+    position: relative;
+    height: 100px;
+    margin: 10px;
+}
+output{
+/*
+    width: 40%;
+    display: table;
+    overflow: auto;
+*/
+}
+
+
+
+
+/*Script js*/
+
+/*
+     if (window.File && window.FileList && window.FileReader){
+    var filesInput = document.getElementById("roomimgs");
+    filesInput.addEventListener("change", function(event) {
+      var files = event.target.files; //FileList object
+      var output = document.querySelector(".output_imgs");
+        var piccontainer = document.getElementById("pic_container");
+        piccontainer.style.display = 'block';
+      for (var i = 0; i < files.length; i++){
+        var file = files[i];
+        //Only pics
+        if (!file.type.match('image'))
+          continue;
+        var picReader = new FileReader();
+        picReader.addEventListener("load", function(event) {
+          var picFile = event.target;
+          var div = document.createElement("div");
+            div.className = 'recs';
+          div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+            "title='" + picFile.name + "'/>";
+          output.insertBefore(div, null);
+        });
+        //Read the image
+        picReader.readAsDataURL(file);
+      }
+    });
+  }else{
+    console.log("Your browser does not support File API");
+  }
+        </script>
+*/

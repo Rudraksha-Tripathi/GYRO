@@ -1,0 +1,83 @@
+
+
+.login-box{
+    width:400px;
+    height: 590px;
+    background: rgba(0,0,0,.9);
+    color: antiquewhite;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding:70px 50px;
+    position: relative;
+    margin-top: 150px;
+    overflow: visible;
+}
+.usericon{
+    width:20;
+    height:20%;
+    border-radius: 100%;
+    position: absolute;
+    top: -10%;
+    left: calc(47% - 45px);
+}
+#aclinks a{
+    text-decoration: none;
+    margin: 0px 20%;
+    
+}
+
+
+h1{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: georgia;
+}
+.login-box p{
+    margin:0;
+    padding:2px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 28px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom:1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+}
+
+
+ .lbtn{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+     transition-delay: 1s;
+    
+}
+
+
+.lbtn:hover{
+    cursor:pointer;
+    background:green;
+    color:aliceblue;
+    text-shadow: 0px 2px 10px green;
+    font-weight: 100;
+    
+}

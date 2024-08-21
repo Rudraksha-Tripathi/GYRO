@@ -1,0 +1,164 @@
+
+/*
+.container{
+    position: relative;
+}
+*/
+
+#seeker_page{
+    position: relative;
+    height: 1000px;
+}
+
+#sidenav{
+    position: absolute;
+    top: 90px;
+    right: 99%;
+    
+}
+#sidenav a{
+      position: absolute;           
+      left: -5px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 130px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+}
+#sidenav a:hover{
+    left: 20px;
+}
+#find{
+    top: 20px;
+    left: 20px;
+    background-color: #2196F3;  
+}
+#bm{
+    top: 80px;
+    background-color: #f44336;  
+}
+#map{
+    top: 140px;
+    background-color: #4CAF50;
+}
+
+.dash-rec-box{
+    position: absolute;
+    width: 80%;
+    height: 800px;
+    left: 15%;
+    background-color: coral;
+}
+
+
+#seeker_page .srch{
+   
+    position: absolute;
+    padding-left: 20%;
+    width: 90%;
+    top: 10%;
+    
+/*    position: relative;*/
+    
+    
+}
+.srch .srch-bar{
+    
+/*    margin-left: 30%;*/
+    width: 60%;
+    transition: 0.4s ease;
+    font-style: italic;
+    border-radius: 40px;
+/*    position: absolute;*/
+}
+.srch-bar:focus{
+    width: 80%;
+}
+.srch #srchbtn{
+
+        margin-top: 5px;
+        margin-bottom: 10px;
+}
+
+
+.user-view{
+    width: 90%;
+    position: absolute;
+    margin-top: 12%;
+    top: 100px;
+    left: 70px;
+    height: 550px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;  
+    
+}
+
+.All-locations{
+    display: block;
+    position: absolute;
+    overflow: auto;
+}
+.bookmarks{
+    display: none;
+}
+.gmap{
+    display: none;
+}
+
+
+.col img{
+    height: 130px;
+    width: 120px;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    cursor: pointer;
+   
+}
+.col{
+    border: black double 5px;
+    align-items: center;
+    justify-content: center;
+     position: relative;
+}
+.col span{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+@media screen and (max-width: 500px) {
+  .col{
+    width: 100%;
+  }
+}
+
+/*      bookmark star   */
+
+.col .fa-star{
+    position: absolute;
+    top: -5px;
+    left: 110px;
+    z-index: 1;
+    color: black;
+    font-size: 20px;
+    
+}
+.col .fa-star:hover{
+    position: absolute;
+    top: -5px;
+    left: 110px;
+    z-index: 1;
+    color: goldenrod;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.title{
+    position: absolute;
+    top: 20px;
+    left: 30%;
+}

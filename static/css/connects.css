@@ -1,0 +1,263 @@
+
+
+#connect_page{
+    margin-top: 10%;
+    height: 900px;
+    position: relative;
+}
+
+/*          Sidebar         */
+
+.sidebar{
+    height: 500px;
+    width: 220px;
+    z-index: 1;
+    position: absolute;
+    background-color: #111;
+    top: 150px;
+    left: 30;
+    overflow-x: hidden;
+    padding: 16px;
+    
+}
+
+
+.sidebar a{
+    padding: 25px 10px 8px 8px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.5s ease;
+}
+.sidebar a:hover{
+    color: darkcyan;
+}
+
+/*          Record box          */
+
+#connect_box{
+    width: 70%;
+    height: 650px;
+    margin-left: 25%;
+    margin-top: 5%;
+    background-color: coral;
+}
+.connect-title{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+/*    bottom: 500px;*/
+}
+
+/*           Connect shows       */
+.connect-show{
+    position: absolute;
+    height: 580px;
+    width: 60%;
+}
+.connected{
+    display: block;
+    overflow: auto;
+}
+.newreq{
+    display: none;
+    overflow: auto;
+}
+.chat{
+    display: none;
+    overflow: auto;
+}
+.chat-window{
+    display: none;
+   
+}
+
+/*          Connected   Users      */
+
+.col img{
+    height: 130px;
+    width: 120px;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.col{
+    border: black double 2px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+/*
+    width: 50%;
+    height: 200px;
+*/
+    
+}
+.col span{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+@media screen and (max-width: 500px) {
+  .col{
+    width: 100%;
+  }
+}
+
+.Profpic{
+    width: 100%;
+    position: relative;
+    
+}
+.actbtns{
+    position: absolute;
+    
+}
+
+.srch{
+    position: absolute;
+    top: 15px;
+    width: 90%;
+    
+}
+.srch .srch-bar{
+    
+/*    margin-left: 30%;*/
+    width: 70%;
+    transition: 0.4s ease;
+    font-style: italic;
+    border-radius: 40px;
+/*    position: absolute;*/
+}
+.srch #srchbtn{
+        position: absolute;
+     
+        margin-bottom: 10px;
+        top: 7px;
+        left: 370px;
+}
+
+
+.user-recs{
+    margin-top: 20px;
+}
+
+.chatnav{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    
+}
+
+.chatnow a{
+    text-decoration: none;
+}
+
+.chat-heads{
+    position: absolute;
+    top: 0px;
+    left: 13%;
+    color: aliceblue;
+}
+
+.chatting{
+    height: 380px;
+    width: 100%;
+    overflow: auto;
+}
+
+.chat-container{
+    margin-top: 5%;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.chat-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.chat-container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.container img.right{
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+  padding-top: 40px;
+}
+
+
+.online{
+    color: lawngreen;
+}
+
+/*
+.online:before{
+    content: &#x25CF;
+    color: green;
+}*/
+
+.type-msg{
+    position: absolute;
+    width: 100%;
+    
+}
+.type{
+    border-radius: 5px;
+    width: 80%;
+    overflow: auto;
+    resize: none;
+}
+.send-msg{
+    position: absolute;
+    top: 22px;
+    left: 455px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+}
+
+/*
+.send-msg .fa .fa-paper-plane{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    padding-top: 10px;
+    padding-right: 10px;
+    right: 10px;
+}
+*/
+
+.dmbtn{
+    filter: grayscale(10);
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+

@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.btn{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0px auto;
+
+}
+@font-face{
+    font-family: myFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+}
+
+#container{
+    width: 100%;
+}
+
+/*########*/
+main{
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    position: relative;
+    padding-top: 20px;
+    background-size: 300vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 120px;  
+}
+
+.session-expired{
+    display: none;
+    position: static;
+    transition: 0.6s ease;
+    
+}

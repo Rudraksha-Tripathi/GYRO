@@ -1,0 +1,37 @@
+
+.imgpage{
+    height: 800px;
+}
+
+
+.imgsgall{
+/*    width: 85%;*/
+    height: 200px;
+/*    overflow: auto;*/
+    margin-top: 10%;
+    
+}
+
+.rimgs{
+    height: 150px;
+    width: 190px;
+}
+
+.imgupload{
+    margin-top: 5%;
+}
+
+.col{
+    position: relative;
+}
+
+.col .close{
+    position: absolute;
+/*    top: 110px;*/
+    left: 50%;
+/*    right: 2px;*/
+    
+}
+.col .close:hover{
+    color: red;
+}

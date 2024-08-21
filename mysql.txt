@@ -1,0 +1,138 @@
+create table status
+(
+status_id int auto_increment primary key,
+status varchar(30) not null unique
+);
+
+create table user_types
+(
+user_type_id int auto_increment primary key,
+user_type varchar(30) not null unique
+);
+
+insert into user_types (user_type) values ('Admin'),('Renter'),('Seeker');
+
+
+
+create table user(
+    user_id int primary key auto_increment not null,
+    username varchar(30) not null,
+    email varchar(35) not null unique key,
+    password varchar(100) not null,
+    gender varchar(2) not null,		
+    address varchar(100) not null,
+    mobile varchar(10) not null unique key,
+    whatsapp varchar(10) not null,
+    user_type_id int,
+    status_id int not null default 9,
+    activation_code varchar(100) null,
+    prof_pic varchar(100) null,
+    constraint fk_users_utypes foreign key (user_type_id) references user_types (user_type_id),
+    constraint fk_users_status foreign key (status_id) references status (status_id)
+);
+
+
+create table states(
+    state_id int auto_increment primary key,
+    state varchar(30) not null unique
+);
+
+#records
+insert into states (state) values ('MP'),('UP'),('AP');
+
+create table cities(
+    city_id int auto_increment primary key,
+    city varchar(30) not null,
+    state_id int not null,
+    constraint fk_cities_states foreign key (state_id) references states (state_id)
+);
+
+#records
+insert into cities (city,state_id) values ('Jabalpur',1),('Bhopal',1),('Indore',1),('Gwalior',1),('Itarsi',1),('Lucknow',2),('Kanpur',2),('Prayagraj',2);
+
+
+############Rooms_info##################
+create table addresses(
+    address_id int auto_increment primary key,
+    user_id int not null,
+    address varchar(500) not null,
+    city_id int not null,
+    pin varchar(6) not null,
+    default_address boolean not null default false,
+    constraint fk_addresses_users foreign key (user_id) references user (user_id),
+    constraint fk_addresses_cities foreign key (city_id) references cities (city_id)
+);
+
+create table hostalFor(
+    hostalFor_id int auto_increment primary key,
+    hostalFor varchar(30) not null unique
+);
+
+insert into hostalFor (hostalFor) values ('Boys'),('Girl');
+
+create table availble_rooms(
+    availble_id int auto_increment primary key,
+    availble varchar(30) not null
+);
+
+insert into availble_rooms (availble) values ('Availble'),('Not Availble'); 
+
+create table rooms_type(
+    rooms_type_id int auto_increment primary key,
+    rooms_type varchar(30) not null
+);
+
+insert into rooms_type (rooms_type) values ('Single'),('Double');
+
+
+create table services(
+    services_id int auto_increment primary key,
+    services varchar(30) not null
+);
+
+insert into services (services) values ('Tiffin'),('AC'),('Hygine and cleanliness'),('Security');
+
+
+create table payment_modes(
+    payment_modes_id int auto_increment primary key,
+    payment_modes varchar(30) not null
+);
+
+insert into  payment_modes ( payment_modes) values ('Cash'),('PayTM'),('GooglePay or UPI'),('Internet Banking');
+
+
+create table rooms(
+    room_id int auto_increment primary key,
+    user_id int not null,
+    hostalFor_id int not null,
+    address_id int not null,
+    availble_id int not null,
+    rooms_type_id int not null,
+    services_id int not null,
+    rates varchar(35) not null,
+    size_of_rooms varchar(100) not null,
+    description varchar(500) not null,
+    constraint fk_rooms_users foreign key (user_id) references user (user_id),
+    constraint fk_rooms_hostalFor foreign key (hostalFor_id) references hostalFor (hostalFor_id),
+    constraint fk_rooms_addresses foreign key (address_id) references addresses (address_id),
+    constraint fk_rooms_availble_rooms foreign key (availble_id) references availble_rooms(availble_id),
+    constraint fk_rooms_rooms_type foreign key (rooms_type_id) references rooms_type (rooms_type_id),
+    constraint fk_rooms_services foreign key (services_id) references services (services_id)
+);
+
+
+#####################################33333
+
+create table payment_modes(
+py_mode_id int not null primary key auto_increment,
+user_id int not null,
+cash boolean not null,
+paytm boolean not null,
+googlepay_upi boolean not null,
+net_banking boolean not null
+);
+
+create table roompic(
+room_pic_path_id int not null primary key auto_increment,
+user_id int not null,
+room_pic_path varchar(100) not null );

@@ -1,0 +1,74 @@
+
+#regform{
+   
+    color: whitesmoke;
+    
+}
+form{
+    margin: 0px auto;
+    padding: 5px 5px 5px 5px;
+    width: 50%;
+    font-family: cursive;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    
+}
+table{
+    background: rgba(0,0,0,.9);
+}
+table th{
+    color: aliceblue;
+}
+
+input{
+    background-color: transparent;
+}
+
+#sbtn{
+    margin-left: 40%;
+    
+}
+.imp::after{
+    content: '*';
+    color: red;
+}
+.mob-box{
+    position: relative;
+    
+}
+.mob-box .loader1{
+    position: absolute;
+    right: 160px;
+    bottom: 10px;
+    top: 40px;
+    display: none;
+}
+.mob-box .otp-verified{
+    position: absolute;
+    right: 150px;  
+    bottom: 3px;
+    display: none;
+}
+.otp-verified img{
+    border-radius: 50%;
+}
+
+.otp-box{
+    
+    display: none;
+    position: relative;
+    
+}
+.otp-box .loader2{
+    position: absolute;
+    right: 185px;
+    bottom: 3px;
+    display: none;
+
+}
+
+.otp_box .verify-btn{
+    position: absolute;
+    left: 30%;
+    display: block;
+}

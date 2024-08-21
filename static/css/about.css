@@ -1,0 +1,48 @@
+
+#jumbo{
+        margin: 0px auto;
+        margin-top: 50px;
+}
+#jumbo2{
+    margin: 0px auto;
+    margin-top: 30px;
+    height: 600px;
+    background-position:right;
+    background-size: contain;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+.card{
+    position: absolute;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-img-top{
+    cursor: pointer;
+    width: 80%;
+    transition: 0.4s ease;
+    
+}
+.card-img-top:hover{
+    width: 90%;
+}
+
+#pro2{
+    margin-left: 25%;
+}
+#pro3{
+    margin-left: 50%;
+}
+#pro4{
+    margin-left: 75%;
+}
+#note{
+    position: absolute;
+    top: 85%;
+    left: 20%;
+}
